@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 namespace SolidPrinciples.OpenClosed
 {
     //GOOD SCENARIO
+    //GOAL is Flexible Code
     public abstract class Vehicle
     {
         public abstract void Start();
@@ -41,8 +42,8 @@ namespace SolidPrinciples.OpenClosed
         }
     }
 
-    //And now we can add a new vehicle type. "Open to extension"
-    //We will not change the VehicleEngineManager codes. because of, VehicleEngineManager's Start method uses Vehicle type parameter.  "Closed to modification"
+    //And now we can create a new vehicle type. for example Plane. "Open to extension"
+    //We will not change the Start method of VehicleEngineManager class. because of, this method uses Vehicle type parameter.  "Closed to modification"
 
 
 }
